@@ -3,10 +3,129 @@
     --dark-grey: hsl(0, 0%, 12%);
     --grey: hsl(0, 0%, 20%);
     --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'Inter-Semi';
+    src: url(Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(Inter-Regular.ttf);
 }
 body {
     background-color: var(--off-black);
 }
 .container {
     background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
 }
+.container img {
+    border-radius: 100px;
+    width: 70px;
+    position: relative;
+    top: -70px;
+    max-height: fit-content;
+    margin-top: 250px;
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bio h2 {
+    position: relative;
+    top: -80px;
+    color: var(--white);
+    font-family: 'Inter';
+    font-weight: 600;
+}
+.bio h3 {
+    position: relative;
+    top: -120px;
+    color: var(--green);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 100;
+    padding: 20px;
+}
+.bio p {
+    position: relative;
+    top: -150px;
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 100;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    border: None;
+    position: relative;
+    top: -150px;
+    padding: 20px;
+}
+.social-links button {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 40px;
+    color: var(--white);
+    border: none;
+    background-color: var(--grey);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-weight: 900;
+}
+/* Default styles */
+/* Add your default CSS styles here */
+
+/* Media query for smaller devices like smartphones */
+@media screen and (max-width: 768px) {
+    .container {
+      width: 90%; /* Adjust the width to fit smaller screens */
+      height: auto; /* Let the height adjust automatically based on content */
+      margin: 20px auto; /* Center the container */
+    }
+  
+    .container img {
+      width: 50%; /* Adjust the width of the image */
+      margin-top: 100px; /* Adjust the top margin of the image */
+    }
+  
+    .bio h2 {
+      font-size: 20px; /* Adjust the font size */
+    }
+  
+    .bio h3 {
+      font-size: 12px; /* Adjust the font size */
+      padding: 10px; /* Adjust the padding */
+    }
+  
+    .bio p {
+      font-size: 12px; /* Adjust the font size */
+    }
+    .social-links button {
+      width: 250px; /* Adjust the width of the buttons */
+      font-size: 12px; /* Adjust the font size */
+      margin-bottom: 20px; /* Adjust the margin between buttons */
+    }
+  }
+  
