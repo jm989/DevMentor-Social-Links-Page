@@ -94,6 +94,10 @@ body {
     font-family: 'Inter';
     font-weight: 900;
 }
+.social-links button:hover {
+    background-color: var(--green);
+    color: var(--off-black);
+}
 /* Default styles */
 /* Add your default CSS styles here */
 
@@ -126,6 +130,10 @@ body {
       width: 250px; /* Adjust the width of the buttons */
       font-size: 12px; /* Adjust the font size */
       margin-bottom: 20px; /* Adjust the margin between buttons */
+    }
+    .social-links button:hover {
+        background-color: var(--green);
+        color: var(--off-black);
     }
   }
   
